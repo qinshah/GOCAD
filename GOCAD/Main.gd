@@ -35,7 +35,7 @@ func _ready() -> void:
 	# Init stuff
 	randomize()
 	Engine.max_fps = Settings.get_value(Settings.RENDERING_FOREGROUND_FPS, Config.DEFAULT_FOREGROUND_FPS)
-	get_window().title = "Lorien v%s" % Config.VERSION_STRING
+	get_window().title = "GOCAD v%s" % Config.VERSION_STRING
 	get_tree().auto_accept_quit = false
 
 	var docs_folder := OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS)

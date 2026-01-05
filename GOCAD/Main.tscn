@@ -178,16 +178,20 @@ unresizable = true
 [node name="UnsavedChangesDialog" parent="UnsavedChangesWindow" instance=ExtResource("7")]
 
 [node name="FileDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
+title = "Open a File"
 initial_position = 2
-size = Vector2i(625, 175)
+size = Vector2i(654, 175)
 theme = ExtResource("8")
+file_mode = 0
 access = 2
-filters = PackedStringArray("*.lorien")
+filters = PackedStringArray("*.dxf")
 use_native_dialog = true
 
 [node name="ExportDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
 initial_position = 2
-size = Vector2i(625, 175)
+size = Vector2i(654, 175)
 theme = ExtResource("8")
 access = 2
 use_native_dialog = true

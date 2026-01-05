@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://e4oiel4oqq0b"]
 
 [ext_resource type="Theme" uid="uid://u5qnpgxqykiv" path="res://UI/Themes/dark/theme.tres" id="1"]
-[ext_resource type="Script" path="res://UI/Menubar.gd" id="2"]
+[ext_resource type="Script" uid="uid://cqxfnckct2hgd" path="res://UI/Menubar.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://r233fnxk5qkf" path="res://Assets/Icons/menu.png" id="3"]
-[ext_resource type="Script" path="res://UI/Components/FlatTextureButton.gd" id="4"]
+[ext_resource type="Script" uid="uid://ck5ywdttdej55" path="res://UI/Components/OpenFileButton.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://bbdkcvds2nxg7" path="res://Assets/Icons/add.png" id="5_4fxbm"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c4kv3i7fmom58" path="res://Assets/Icons/save_file.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://dxi6gc6npiskq" path="res://Assets/Icons/open_file.png" id="2"]
-[ext_resource type="Script" path="res://UI/Toolbar.gd" id="3"]
+[ext_resource type="Script" uid="uid://bubvct701h50e" path="res://UI/Toolbar.gd" id="3"]
 [ext_resource type="Texture2D" uid="uid://b14r0skgpftxj" path="res://Assets/Icons/new_file.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://see51v4hg68f" path="res://Assets/Icons/redo.png" id="6"]
 [ext_resource type="Texture2D" uid="uid://h54g8ofkc3p8" path="res://Assets/Icons/undo.png" id="7"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bynefqnt8pdby" path="res://Assets/Icons/eraser_tool.png" id="9"]
 [ext_resource type="Texture2D" uid="uid://7a3xk8n0q24k" path="res://Assets/Icons/rectangle_tool.png" id="10"]
 [ext_resource type="Texture2D" uid="uid://bn1qdw0v30np0" path="res://Assets/Icons/line_tool.png" id="11"]
-[ext_resource type="Script" path="res://UI/Components/FlatTextureButton.gd" id="13"]
+[ext_resource type="Script" uid="uid://ck5ywdttdej55" path="res://UI/Components/OpenFileButton.gd" id="13"]
 [ext_resource type="Theme" uid="uid://u5qnpgxqykiv" path="res://UI/Themes/dark/theme.tres" id="15"]
 [ext_resource type="Texture2D" uid="uid://ddxis8f7tvg66" path="res://Assets/Icons/selection_tool.png" id="16"]
 [ext_resource type="Texture2D" uid="uid://0qicbkag5jd3" path="res://Assets/Icons/circle_tool.png" id="19"]
@@ -192,16 +192,16 @@ custom_minimum_size = Vector2(60, 20)
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "TOOLBAR_TOOLTIP_BRUSH_COLOR"
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/focus = SubResource("4")
-theme_override_styles/disabled = SubResource("4")
-theme_override_styles/hover = SubResource("4")
-theme_override_styles/pressed = SubResource("4")
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("4")
+theme_override_styles/pressed = SubResource("4")
+theme_override_styles/hover = SubResource("4")
+theme_override_styles/disabled = SubResource("4")
+theme_override_styles/focus = SubResource("4")
 action_mode = 0
 text = "#ffffff"
 

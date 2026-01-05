@@ -413,7 +413,10 @@ func _on_save_project_as() -> void:
 	_canvas.disable()
 	_file_dialog.file_mode = FileDialog.FILE_MODE_SAVE_FILE
 	_file_dialog.invalidate()
+	_file_dialog.filters = ["*.dxf ; DXF Files (*.dxf)", "*.gocad ; GOCAD Files (*.gocad)"]
 	_file_dialog.current_file = active_project.filepath.get_file()
+	if active_project.filepath.get_extension().to_lower() != ".dxf":
+		_file_dialog.current_file = "drawing.dxf"  # 默认使用DXF扩展名
 	_file_dialog.file_selected.connect(_on_file_selected_to_save_project)
 	_file_dialog.close_requested.connect(_on_file_dialog_closed)
 	_file_dialog.canceled.connect(_on_file_dialog_canceled)
@@ -427,6 +430,8 @@ func _on_save_project() -> void:
 		_canvas.disable()
 		_file_dialog.file_mode = FileDialog.FILE_MODE_SAVE_FILE
 		_file_dialog.invalidate()
+		_file_dialog.filters = ["*.dxf ; DXF Files (*.dxf)", "*.gocad ; GOCAD Files (*.gocad)"]
+		_file_dialog.current_file = "drawing.dxf"  # 默认使用DXF扩展名
 		_file_dialog.file_selected.connect(_on_file_selected_to_save_project)
 		_file_dialog.close_requested.connect(_on_file_dialog_closed)
 		_file_dialog.canceled.connect(_on_file_dialog_canceled)
